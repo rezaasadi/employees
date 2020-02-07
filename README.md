@@ -1,7 +1,7 @@
 # employees
 A simple CRUD application with React, Bootstrap and json-server 
 
-## How to run application on the local computer :
+## How to run application on your computer :
 
 Open bash or cmd and :
 
