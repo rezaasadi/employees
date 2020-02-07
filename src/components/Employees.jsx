@@ -55,7 +55,9 @@ class Employees extends Component {
 
   addEmployeeHandler = () => {
     let eList = { ...this.state.employeeList };
-    const newId = Object.keys(eList)[Object.keys(eList).length - 1] * 1 + 1;
+    const newId = Object.keys(eList).length
+      ? Object.keys(eList)[Object.keys(eList).length - 1] * 1 + 1
+      : 0;
     const newEmployee = {
       id: newId,
       name: this.state.name,

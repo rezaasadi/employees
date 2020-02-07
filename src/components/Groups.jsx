@@ -79,7 +79,9 @@ class Groups extends Component {
 
   addGroupHandler = () => {
     let gList = { ...this.state.groupList };
-    const newId = Object.keys(gList)[Object.keys(gList).length - 1] * 1 + 1;
+    const newId = Object.keys(gList).length
+      ? Object.keys(gList)[Object.keys(gList).length - 1] * 1 + 1
+      : "10000";
     const newGroup = {
       name: this.state.name,
       members: []
@@ -166,7 +168,6 @@ class Groups extends Component {
           if (gr.members.indexOf(empId) === gr.members.length - 1)
             resolve(true);
         });
-      
       });
     });
   };
@@ -323,7 +324,10 @@ class Groups extends Component {
     if (checked) {
       __CHECK_ALL = true;
       Object.keys(this.state.employeeList).forEach(id => {
-        if (this.state.employeeList[id].groups.indexOf(parseInt(__GROUP_ID)) === -1)
+        if (
+          this.state.employeeList[id].groups.indexOf(parseInt(__GROUP_ID)) ===
+          -1
+        )
           mList.push(parseInt(id));
       });
     } else __CHECK_ALL = false;
