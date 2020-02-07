@@ -1,2 +1,2 @@
 # employees
-A full CRUD simple application with React and Bootstrap 
+A simple CRUD application with React and Bootstrap 
