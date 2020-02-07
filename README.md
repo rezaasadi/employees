@@ -20,7 +20,7 @@ Open bash or cmd and :
 5)  Run json server on port 3004
  > json-server .\employees_db.js --port 3004
 
-6)  Run react server
+6)  Run app server
  > npm start
   
   
