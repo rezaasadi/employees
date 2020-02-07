@@ -1,5 +1,5 @@
 # employees
-A simple CRUD application with React and Bootstrap 
+A simple CRUD application with React, Bootstrap and json-server 
 
 ## How to run application on the local computer :
 
