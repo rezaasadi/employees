@@ -1,0 +1,42 @@
+{
+  "employees": [
+    {
+      "id": "1001",
+      "name": "Thomas Hardy",
+      "email": "thomashardy@mail.com",
+      "address": "89 Chiaroscuro Rd, Portland, USA",
+      "phone": "(171) 555-2222",
+      "groups": [
+        "100",
+        "101"
+      ]
+    },
+    {
+      "id": "1002",
+      "name": "Reza Asadi",
+      "email": "reza7ca@gmail.com",
+      "address": "1594 Rue Rachel Est, Montreal, Canada",
+      "phone": "(514) 690-1944",
+      "groups": [
+        "100"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "100",
+      "name": "Developers",
+      "members": [
+        "1001",
+        "1002"
+      ]
+    },
+    {
+      "id": "101",
+      "name": "Designers",
+      "members": [
+        "1001"
+      ]
+    }
+  ]
+}
