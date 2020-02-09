@@ -57,7 +57,7 @@ class Employees extends Component {
     let eList = { ...this.state.employeeList };
     const newId = Object.keys(eList).length
       ? Object.keys(eList)[Object.keys(eList).length - 1] * 1 + 1
-      : 0;
+      : "0";
     const newEmployee = {
       id: newId,
       name: this.state.name,
