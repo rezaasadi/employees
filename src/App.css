@@ -376,6 +376,7 @@ table.table td i {
   min-width: 1024px;
 }
 
+
 @media (min-width: 1600px) {
   .container,
   .container-lg,
