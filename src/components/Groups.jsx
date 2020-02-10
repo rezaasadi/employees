@@ -83,6 +83,7 @@ class Groups extends Component {
       ? Object.keys(gList)[Object.keys(gList).length - 1] * 1 + 1
       : "10000";
     const newGroup = {
+      id : newId,
       name: this.state.name,
       members: []
     };
